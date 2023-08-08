@@ -1,0 +1,585 @@
+element_type,id,now_cost,selected_by_percent,team,web_name
+3,2368,45.0,0,1,Alfie Chang
+2,84,50.0,0,1,Dion Sanderson
+2,2800,50.0,0,1,Emmanuel Longelo
+2,2253,55.0,0,1,Ethan Laird
+3,215,50.0,0,1,Gary Gardner
+3,2433,50.0,0,1,George Hall
+1,2732,50.0,0,1,John Ruddy
+3,2402,45.0,0,1,Jordan James
+2,2778,40.0,0,1,Josh Williams
+3,58,60.0,0,1,Juninho Bacuna
+3,1645,60.0,0,1,Keshi Anderson
+2,2642,50.0,0,1,Kevin Long
+3,3813,60.0,0,1,Kijo Miyoshi
+3,644,50.0,0,1,Krystian Bielik
+2,623,50.0,0,1,Lee Buchanan
+4,220,55.0,0,1,Lukas Jutkiewicz
+2,201,50.0,0,1,Marc Roberts
+2,2367,40.0,0,1,Marcel Oakley
+1,117,45.0,0,1,Neil Leonard Dula Etheridge
+2,957,40.0,0,1,Nico Gordon
+4,1416,50.0,0,1,Sam Cosgrove
+4,229,65.0,0,1,Scott Hogan
+3,1609,60.0,0,1,Siriki Dembélé
+3,498,60.0,0,1,Tyler Roberts
+1,1265,40.0,0,1,Zach Jeacock
+3,2555,50.0,0,2,Adam Wharton
+3,3815,70.0,0,2,Arnor Sigurdsson
+2,2770,45.0,0,2,Ashley Phillips
+1,654,50.0,0,2,Aynsley Pears
+2,1313,55.0,0,2,Callum Brittain
+3,2508,50.0,0,2,Dilan Markanday
+2,1077,55.0,0,2,Dominic Hyam
+4,3586,50.0,0,2,Harry Leonard
+2,1676,55.0,0,2,Harry Pickering
+2,586,50.0,0,2,Hayden Carter
+4,946,50.0,0,2,Jack Vale
+3,2174,45.0,0,2,Jake Garrett
+2,596,55.0,0,2,Joe Rankin-Costello
+3,597,60.0,0,2,John Buckley
+3,585,55.0,0,2,Lewis Travis
+4,3606,60.0,0,2,Niall Nathan Michael Ennis
+3,2531,65.0,0,2,Ryan Hedges
+4,599,65.0,0,2,Sam Gallagher
+3,293,65.0,0,2,Samuel Szmodics
+2,1268,50.0,0,2,Scott Wharton
+3,3814,55.0,0,2,Sondre Tronstad
+3,1269,65.0,0,2,Tyrhys Dolan
+3,1440,60.0,0,3,Alex Scott
+3,288,70.0,0,3,Andreas Weimann
+3,60,45.0,0,3,Andy King
+3,1319,60.0,0,3,Anis Mehmeti
+3,2396,45.0,0,3,Ayman Benarous
+2,1504,50.0,0,3,Cameron Pring
+2,2316,50.0,0,3,George Tanner
+3,938,60.0,0,3,Harry Cornick
+2,3817,50.0,0,3,Haydon Roberts
+3,628,55.0,0,3,Jason Knight
+3,434,50.0,0,3,Joe Williams
+2,437,50.0,0,3,Kal Naismith
+3,2636,55.0,0,3,Mark Sykes
+3,1323,50.0,0,3,Matty James
+1,1255,45.0,0,3,Max O'Leary
+4,305,70.0,0,3,Nahki Wells
+2,1679,50.0,0,3,Rob Atkinson
+2,1243,50.0,0,3,Robert Dickie
+2,3816,50.0,0,3,Ross McCrorie
+3,1505,60.0,0,3,Samuel John Bell
+1,2724,40.0,0,3,Stefan Bajic
+4,1439,65.0,0,3,Tommy Conway
+2,279,50.0,0,3,Zak Vyner
+3,1890,65.0,0,4,Aaron Ramsey
+3,142,50.0,0,4,Andrew Ferai Rinomhota
+3,299,55.0,0,4,Callum O'Dowda
+4,406,70.0,0,4,Callum Robinson
+2,3850,50.0,0,4,Dimitris Goutas
+3,2654,45.0,0,4,Ebou Adams
+4,3457,60.0,0,4,Ike Dominique Ugbo
+2,1022,45.0,0,4,Jack Simpson
+1,2653,45.0,0,4,Jak Alnwick
+2,2651,50.0,0,4,Jamilu Collins
+3,94,50.0,0,4,Joe Ralls
+2,80,45.0,0,4,Joel Bagan
+3,521,60.0,0,4,Josh Bowler
+4,67,80.0,0,4,Karlan Ahearne-Grant
+4,2767,60.0,0,4,Kion Etete
+2,316,50.0,0,4,Mahlon Beresford Baker Romeo
+2,1680,50.0,0,4,Mark McGuinness
+2,1402,55.0,0,4,Perry Ng
+3,391,50.0,0,4,Romaine Theodore Sawyers
+3,1413,55.0,0,4,Rubin Colwill
+1,1175,50.0,0,4,Ryan Allsop
+3,1681,55.0,0,4,Ryan Wintle
+3,1252,55.0,0,4,Sheyi Ojo
+2,2652,45.0,0,4,Vontae Daley-Campbell
+3,171,60.0,0,4,Yakou Meïté
+3,1249,55.0,0,5,Ben Sheaf
+1,1144,55.0,0,5,Ben Wilson
+2,3874,55.0,0,5,Bobby Thomas
+1,837,50.0,0,5,Bradley Collins
+3,1148,75.0,0,5,Callum O'Hare
+4,1646,85.0,0,5,Ellis Simms
+4,1423,50.0,0,5,Fabio Tavares
+3,1200,85.0,0,5,Gustavo Hamer
+2,1088,45.0,0,5,Jack Burroughs
+2,795,60.0,0,5,Jake Bidwell
+3,1149,65.0,0,5,Jamie Allen
+2,277,55.0,0,5,Jay Dasilva
+2,1334,55.0,0,5,Joel Latibeaudiere
+3,1085,55.0,0,5,Josh Eccles
+3,287,65.0,0,5,Kasey Palmer
+2,1146,55.0,0,5,Kyle McFadzean
+3,1081,50.0,0,5,Liam Kelly
+2,3885,55.0,0,5,Luis Binks
+4,1152,70.0,0,5,Matt Godden
+2,3881,60.0,0,5,Milan Van Ewijk
+1,1519,50.0,0,5,Simon Moore
+3,3846,70.0,0,5,Tatsuhiro Sakamoto
+2,970,40.0,0,6,A. Rowe
+2,40,40.0,0,6,Ben Jackson
+3,1359,45.0,0,6,Brahima Diarra
+1,1629,45.0,0,6,Christopher Maxwell
+3,326,50.0,0,6,Connor Mahoney
+4,107,60.0,0,6,Danny Ward
+3,2728,45.0,0,6,David Kasumu
+3,2735,55.0,0,6,Jack Rudoni
+2,1473,45.0,0,6,Jaheim Headley
+3,57,45.0,0,6,Jonathan Hogg
+4,740,55.0,0,6,Jordan Rhodes
+3,71,60.0,0,6,Josh Koroma
+2,1683,45.0,0,6,Josh Ruffels
+4,3607,50.0,0,6,Kyle Hudlin
+1,1682,50.0,0,6,Lee Nicholls
+2,921,50.0,0,6,Matthew Pearson
+2,1259,50.0,0,6,Michał Helik
+2,1634,45.0,0,6,Oliver Turton
+2,38,45.0,0,6,Rarmani Edmonds-Green
+3,41,45.0,0,6,Scott High
+3,1408,60.0,0,6,Sorba Thomas
+2,753,45.0,0,6,Thomas Edwards
+2,724,50.0,0,6,Tom Lees
+2,2734,45.0,0,6,Yuta Nakayama
+4,2471,60.0,0,7,Aaron Connolly
+3,2805,55.0,0,7,Adama Noss Traoré
+2,1550,50.0,0,7,Alfie Jones
+4,2535,60.0,0,7,Allahyar Sayyadmanesh
+4,2743,60.0,0,7,Benjamin Tetteh
+2,531,45.0,0,7,Brandon Fleming
+2,9,55.0,0,7,Cyrus Christie
+3,2739,55.0,0,7,Doğukan Sinik
+3,1557,50.0,0,7,Greg Docherty
+3,3583,50.0,0,7,Harry Vaughan
+2,1551,50.0,0,7,Jacob Greaves
+3,3852,55.0,0,7,Jason Lokilo
+3,1483,55.0,0,7,Jean Michaël Seri
+2,1548,50.0,0,7,Lewie Coyle
+4,2554,60.0,0,7,Liam Delap
+1,504,50.0,0,7,Matt Ingram
+4,2731,70.0,0,7,Óscar Estupiñán
+3,2721,60.0,0,7,Ozan Tufan
+3,1540,50.0,0,7,Regan Slater
+2,3870,55.0,0,7,Ruben Vinagre
+3,1693,55.0,0,7,Ryan Longman
+3,325,45.0,0,7,Ryan Woods
+2,511,50.0,0,7,Sean McLoughlin
+1,3523,40.0,0,7,Thimothee Lo-Tutala
+3,2750,45.0,0,7,Vaughn Covil
+3,2806,45.0,0,7,Xavier Simons
+3,3615,50.0,0,8,Cameron Humphreys
+2,3612,45.0,0,8,Cameron Robert Burgess
+1,581,45.0,0,8,Christian Walton
+1,2380,40.0,0,8,Cieran Slicker
+4,852,65.0,0,8,Conor Chaplin
+3,708,45.0,0,8,Dominic Ball
+2,3818,40.0,0,8,Elkan Baggott
+4,1162,60.0,0,8,Freddie Ladapo
+2,1432,45.0,0,8,George Edmundson
+4,1283,60.0,0,8,George Hirst
+2,3611,40.0,0,8,Gregory Alex Leigh
+2,2676,45.0,0,8,Harry Clarke
+3,1608,55.0,0,8,Jack Taylor
+2,3610,40.0,0,8,Janoi Donacien
+4,3616,50.0,0,8,Kayden Pastel Dunn Jackson
+3,392,50.0,0,8,Kyle Edwards
+3,448,45.0,0,8,Lee Evans
+2,464,50.0,0,8,Leif Davis
+2,3613,45.0,0,8,Luke Matthew Woolfenden
+3,3617,55.0,0,8,Marcus Anthony Harness
+3,737,45.0,0,8,Massimo Luongo
+4,2776,60.0,0,8,Nathan Broadhead
+1,3608,40.0,0,8,Nicholas Michael Hayes
+3,3869,60.0,0,8,Omari Hutchinson
+3,147,50.0,0,8,Omatsone Folarin Aluko
+3,429,50.0,0,8,Sam Morsy
+1,3609,40.0,0,8,Vaclav Hladky
+3,3618,60.0,0,8,Wesley James Burns
+3,3887,55.0,0,9,Archie Gray
+2,2723,55.0,0,9,Charlie Cresswell
+2,2497,60.0,0,9,Cody Drameh
+3,3624,85.0,0,9,Crysencio Jilbert Sylverio Cir Summerville
+3,2005,80.0,0,9,Daniel James
+3,3886,55.0,0,9,Darko Gyabi
+3,3627,100.0,0,9,Degnand Wilfried Gnonto
+2,1543,60.0,0,9,Ethan Ampadu
+4,3626,90.0,0,9,Georginio Rutter
+2,3620,60.0,0,9,Hector Junior Firpo Adames
+3,492,70.0,0,9,Hélder Wander Sousa Azevedo Costa
+3,476,60.0,0,9,Ian Carlo Poveda-Ocampo
+1,454,60.0,0,9,Illan Meslier
+3,470,95.0,0,9,Jack Harrison
+3,474,55.0,0,9,Jamie Shackleton
+4,443,75.0,0,9,Joe Gelhardt
+1,3558,60.0,0,9,Karl Darlow
+1,3619,50.0,0,9,Kristoffer-August Sundquist Klaesson
+2,3533,50.0,0,9,Leo Hjelde
+2,461,60.0,0,9,Liam Cooper
+3,3625,90.0,0,9,Luis Fernando Sinisterra
+2,458,60.0,0,9,Luke Ayling
+4,3889,55.0,0,9,Matteo Joseph
+2,466,55.0,0,9,Pascal Struijk
+4,477,100.0,0,9,Patrick Bamford
+3,3623,70.0,0,9,Sam Greenwood
+2,493,55.0,0,9,Stuart Dallas
+3,2075,60.0,0,9,Tyler Adams
+1,83,50.0,0,10,Alex Smithies
+3,1914,60.0,0,10,Boubakary Soumare
+2,2729,60.0,0,10,Callum Doyle
+2,2852,60.0,0,10,Conor David Coady
+1,1391,60.0,0,10,Daniel Iversen
+1,3038,60.0,0,10,Danniel Ward
+3,2872,60.0,0,10,Dennis Praet
+3,2774,55.0,0,10,Hamza Choudhury
+2,1279,60.0,0,10,Harry Souttar
+3,3819,60.0,0,10,Harry Winks
+2,3633,65.0,0,10,James Michael Justin
+4,3635,100.0,0,10,Jamie Richard Vardy
+2,2907,55.0,0,10,Jannik Vestergaard
+3,3888,60.0,0,10,Kasey McAteer
+4,3637,115.0,0,10,Kelechi Promise Iheanacho
+3,1326,75.0,0,10,Kiernan Dewsbury-Hall
+2,3629,55.0,0,10,Luke Jonathan Thomas
+1,3851,60.0,0,10,Mads Hermansen
+3,3559,65.0,0,10,Marc Albrighton
+3,3631,60.0,0,10,Onyinye Wilfred Ndidi
+4,3634,95.0,0,10,Patson Daka
+2,3632,65.0,0,10,Ricardo Domingos Barbosa Pereira
+3,3891,90.0,0,10,Stephy Mavididi
+2,2864,70.0,0,10,Timothy Castagne
+2,3630,60.0,0,10,Victor Bernth Kristiansen
+3,3883,60.0,0,10,Wanya Marcal-Madivadua
+2,3312,60.0,0,10,Wout Faes
+3,1383,55.0,0,11,Alexander Gilbert
+2,1232,50.0,0,11,Anfernee Dijksteel
+4,1287,110.0,0,11,Chuba Akpom
+2,663,55.0,0,11,Dael Fry
+3,1301,60.0,0,11,Daniel Barlaser
+2,584,55.0,0,11,Darragh Lenihan
+2,661,45.0,0,11,Hayden Coulson
+3,672,60.0,0,11,Hayden Hackney
+3,1361,75.0,0,11,Isaiah Jones
+1,418,45.0,0,11,Jamie Jones
+3,667,55.0,0,11,Jonathan Howson
+4,1446,60.0,0,11,Josh Coburn
+4,232,80.0,0,11,Marcus Forss
+3,2179,60.0,0,11,Martín Payero
+2,624,50.0,0,11,Matt Clarke
+3,1122,65.0,0,11,Matty Crooks
+3,375,65.0,0,11,Morgan Rogers
+2,682,55.0,0,11,Paddy McNair
+2,3820,50.0,0,11,Rav Van Den Berg
+3,1310,70.0,0,11,Riley McGree
+3,3844,60.0,0,11,Samuel Silvera
+1,1296,45.0,0,11,Seny Dieng
+1,3845,45.0,0,11,Tom Glover
+2,758,55.0,0,11,Tom Smith
+4,2783,60.0,0,12,Andreas Voglsammer
+1,312,55.0,0,12,Bartosz Bialkowski
+3,328,50.0,0,12,Billy Mitchell
+3,3871,55.0,0,12,Casper De Norre
+1,198,45.0,0,12,Connal Trueman
+2,319,60.0,0,12,Danny McNamara
+3,1341,60.0,0,12,Duncan Watmore
+3,625,45.0,0,12,George Evans
+3,520,60.0,0,12,George Honeyman
+1,503,60.0,0,12,George Long
+3,680,55.0,0,12,George Saville
+2,315,60.0,0,12,Jake Cooper
+2,10,65.0,0,12,Joe Bryan
+4,3821,75.0,0,12,Kevin Nisbet
+1,2159,60.0,0,12,Matija Sarkic
+2,313,60.0,0,12,Murray Wallace
+3,3524,50.0,0,12,Romain Esse
+3,324,50.0,0,12,Ryan Leonard
+2,314,55.0,0,12,Shaun Hutchinson
+4,335,75.0,0,12,Tom Bradshaw
+3,331,55.0,0,12,Tyler Burey
+2,199,55.0,0,12,Wes Harding
+3,2658,90.0,0,12,Zian Flemming
+4,1156,65.0,0,13,Adam Idah
+2,1355,55.0,0,13,Andrew Omobamidele
+1,1324,55.0,0,13,Angus Gunn
+4,2648,70.0,0,13,Ashley Barnes
+2,1247,50.0,0,13,Ben Gibson
+3,3823,65.0,0,13,Borja Sainz
+3,3298,70.0,0,13,Christian Fassnacht
+3,2660,60.0,0,13,Christos Tzolis
+2,1405,55.0,0,13,Dimitris Giannoulis
+3,2736,75.0,0,13,Gabriel Sara
+2,1051,55.0,0,13,Grant Hanley
+2,1141,60.0,0,13,Jack Stacey
+3,1210,50.0,0,13,Jakob Lungi Sørensen
+3,2661,45.0,0,13,Jon Rowe
+2,2748,45.0,0,13,Jonathan Tomkinson
+4,2662,85.0,0,13,Josh Sargent
+3,1062,55.0,0,13,Kenny McLean
+3,2749,55.0,0,13,Liam Gibbs
+3,2764,60.0,0,13,Marcelino Nuñez
+2,1049,60.0,0,13,Maximillian James Aarons
+3,2659,70.0,0,13,Milot Rashica
+3,1057,65.0,0,13,Onel Lázaro Hernández Mayea
+3,1212,55.0,0,13,Przemysław Płacheta
+2,1075,50.0,0,13,Sam McCallum
+2,3822,55.0,0,13,Shane Duffy
+1,1047,50.0,0,13,Tim Krul
+3,3646,50.0,0,14,Adam Fletcher Randell
+2,1208,55.0,0,14,Bali Mumba
+4,3645,45.0,0,14,Benjamin Peter Waine
+2,923,45.0,0,14,Brendan Joel Zibusiso Galloway
+1,3639,45.0,0,14,Callum Alex David Burton
+3,2798,55.0,0,14,Callum Wright
+1,3847,40.0,0,14,Conor Hazard
+2,3643,45.0,0,14,Daniel George Scarr
+3,3897,55.0,0,14,Finn Azaz
+3,3644,45.0,0,14,Jordan Alexander Houghton
+2,3641,45.0,0,14,Joseph Robert Edwards
+2,3824,45.0,0,14,Julio Pleguezuelo
+2,2788,45.0,0,14,K. Kessler
+2,1291,45.0,0,14,Lewis Gibson
+3,3879,45.0,0,14,Lewis Warrington
+2,3642,45.0,0,14,Macaulay Gillesphey
+3,1030,45.0,0,14,Matt Butcher
+1,3640,45.0,0,14,Michael John Cooper
+3,1218,50.0,0,14,Mikel Miller
+4,636,60.0,0,14,Morgan Whittaker
+4,3648,55.0,0,14,Ryan Hardie
+2,3638,40.0,0,14,Saxon Earley
+3,3647,50.0,0,14,Tyreik Samuel Wright
+3,370,55.0,0,15,Alan Browne
+3,2331,50.0,0,15,Alistair McCann
+2,347,50.0,0,15,Andrew Hughes
+3,1392,55.0,0,15,Benjamin Whiteman
+3,1658,55.0,0,15,Benjamin Woodburn
+2,362,55.0,0,15,Brad Potts
+2,3825,55.0,0,15,Calvin Ramsey
+4,1393,55.0,0,15,Ched Evans
+1,1686,45.0,0,15,David Cornell
+3,626,50.0,0,15,Duane Holmes
+4,1299,70.0,0,15,Emil Riis
+1,791,55.0,0,15,Freddie Woodman
+2,110,50.0,0,15,Greg Cunningham
+2,2704,50.0,0,15,Jack Whatmough
+2,345,55.0,0,15,Jordan Storey
+2,3899,45.0,0,15,Kian Best
+4,3873,50.0,0,15,Layton Layton
+2,755,50.0,0,15,Liam Lindsay
+3,3848,60.0,0,15,Mads Frokjaer-Jensen
+2,348,50.0,0,15,Patrick Bauer
+2,2403,55.0,0,15,Robbie Brady
+3,356,50.0,0,15,Ryan Ledson
+4,2716,60.0,0,15,William Keane
+2,3572,40.0,0,16,Aaron Drewe
+3,96,50.0,0,16,Albert Danquah Adomah
+3,1688,45.0,0,16,Andre Dozzell
+1,1036,45.0,0,16,Asmir Begović
+3,66,70.0,0,16,Chris Willock
+3,3568,45.0,0,16,Elijah Dixon-Bonner
+3,699,85.0,0,16,Ilias Chair
+3,537,50.0,0,16,Jack Colback
+2,204,45.0,0,16,Jake Clarke-Salter
+2,1692,45.0,0,16,Jimmy Dunne
+1,29,40.0,0,16,Jordan Archer
+2,2665,50.0,0,16,Kenneth Paal
+4,1227,70.0,0,16,Lyndon Dykes
+2,750,45.0,0,16,Morgan Fox
+2,707,40.0,0,16,Osman Kakay
+3,1221,55.0,0,16,Paul Smyth
+3,890,50.0,0,16,Sam Field
+4,2751,55.0,0,16,Sinclair Armstrong
+3,2492,55.0,0,16,Taylor Richards
+2,3826,45.0,0,16,Ziyad Larkeche
+3,366,55.0,0,17,Andre Green
+3,1121,55.0,0,17,Ben Wiles
+2,2726,45.0,0,17,Cameron Humphreys
+3,1332,50.0,0,17,Carlos Miguel Ribeiro Dias
+2,2720,45.0,0,17,Cohen Bramall
+2,3880,45.0,0,17,Dexter Lembikisa
+1,873,45.0,0,17,Dillon Phillips
+3,1187,55.0,0,17,Fred Onyedinma
+4,2673,50.0,0,17,George Kelly
+2,690,45.0,0,17,Grant Hall
+3,2671,45.0,0,17,Hakeem Odoffin
+3,1160,50.0,0,17,Jamie Lindsay
+2,2674,40.0,0,17,Jamie McCart
+4,702,60.0,0,17,Jordan Hugill
+2,82,45.0,0,17,Lee Peltier
+3,2670,50.0,0,17,Oliver Rathbone
+2,86,45.0,0,17,Sean Morrison
+3,334,50.0,0,17,Shane Ferguson
+2,2668,40.0,0,17,Tolaji Bola
+4,525,55.0,0,17,Tom Eaves
+2,137,45.0,0,17,Tyler Blackett
+1,1264,50.0,0,17,Viktor Johansson
+2,3650,40.0,0,18,Akinlolu Richard Olamide Famewo
+3,2310,55.0,0,18,Anthony Musaba
+4,675,60.0,0,18,Ashley Fletcher
+2,841,50.0,0,18,Bambo Diaby
+3,735,65.0,0,18,Barry Bannan
+3,114,50.0,0,18,Callum Paterson
+1,720,45.0,0,18,Cameron Dawson
+2,2164,45.0,0,18,Di'Shon Bernard
+2,729,45.0,0,18,Dominic Iorfa
+3,804,55.0,0,18,George Byers
+3,417,65.0,0,18,Josh Windass
+2,3878,45.0,0,18,Juan Delgado
+4,771,55.0,0,18,Lee Gregory
+2,749,45.0,0,18,Liam Palmer
+3,529,50.0,0,18,Mallik Wilks
+3,669,60.0,0,18,Marvin Johnson
+2,1120,45.0,0,18,Michael Ihiekwe
+4,1125,60.0,0,18,Michael Smith
+1,3649,40.0,0,18,Pierce Charles
+2,3882,45.0,0,18,Pol Valentin
+2,1673,45.0,0,18,Reece James
+3,1270,45.0,0,18,Tyreeq Bakinson
+3,121,45.0,0,18,Will Vaulks
+4,598,100.0,0,19,Adam Armstrong
+1,3652,55.0,0,19,Alex Simon McCarthy
+2,3317,60.0,0,19,Armel Bella-Kotchap
+3,3666,95.0,0,19,Carlos Jonas Alcaraz
+4,3668,110.0,0,19,Che Zach Everton Fred Adams
+4,3665,90.0,0,19,Ebere Paul Onuachu
+1,3656,60.0,0,19,Gavin Okeroghene Bazunu
+2,3654,55.0,0,19,Jack Stephens
+2,924,65.0,0,19,James Bree
+3,3667,110.0,0,19,James Michael Edward Ward-Prowse
+2,2971,60.0,0,19,Jan Kacper Bednarek
+3,3661,70.0,0,19,Joseph Oluwaseyi Temitope Ayodele-Aribo
+2,3657,60.0,0,19,Juan Larios Lopez
+3,3138,95.0,0,19,Kamaldeen Sulemana
+2,3660,70.0,0,19,Kyle Leonardus Walker-Peters
+2,3653,55.0,0,19,Lyanco Evangelista Silveira Neves Vojnovic
+3,3663,80.0,0,19,Moussa Djenepo
+3,2775,105.0,0,19,Nathan Tella
+2,3658,60.0,0,19,Romain Paul Jean-Michel Perraud
+3,2357,60.0,0,19,Roméo Lavia
+2,698,70.0,0,19,Ryan Manning
+3,2392,80.0,0,19,Samuel Edozie
+4,3664,80.0,0,19,Sekou Mara
+3,3849,60.0,0,19,Shea Charles
+3,3662,75.0,0,19,Stuart Armstrong
+2,3659,70.0,0,19,Valentino Francisco Livramento
+3,2742,70.0,0,19,Will Smallbone
+3,3877,65.0,0,20,Andre Vidigal
+3,351,50.0,0,20,Ben Pearson
+2,794,50.0,0,20,Ben Wilmot
+3,354,65.0,0,20,Daniel Johnson
+3,2462,50.0,0,20,D'Margio Wright-Phillips
+4,2741,60.0,0,20,Dwight Gayle
+4,2619,50.0,0,20,Emre Tezgel
+2,1541,50.0,0,20,Enda Stevens
+3,3872,65.0,0,20,Francisco Jorge Tavares Oliveira
+1,1690,45.0,0,20,Jack Bonham
+4,857,65.0,0,20,Jacob Brown
+3,780,50.0,0,20,Jordan Thompson
+3,1274,55.0,0,20,Josh Laurent
+2,761,50.0,0,20,Josh Tymon
+2,3552,55.0,0,20,Ki-Jana Hoever
+3,166,60.0,0,20,Lewis Baker
+2,2719,50.0,0,20,Luke McNally
+1,1015,50.0,0,20,Mark Travers
+2,1147,50.0,0,20,Michael Rose
+4,3127,65.0,0,20,Ryan Mmaee A'Nwambeben Kabir
+4,772,70.0,0,20,Tyrese Campbell
+4,3884,65.0,0,20,Wesley Moraes
+3,2802,55.0,0,21,Abdoullah Ba
+2,2733,50.0,0,21,Aji Alese
+3,59,65.0,0,21,Alex Pritchard
+1,2677,55.0,0,21,Anthony Patterson
+3,593,60.0,0,21,Bradley Dack
+3,3527,50.0,0,21,Chris Rigg
+3,608,45.0,0,21,Corry Evans
+2,1659,55.0,0,21,Daniel George Ballard
+3,2683,55.0,0,21,Daniel Neil
+2,756,55.0,0,21,Danny Batth
+2,2679,55.0,0,21,Dennis Cirkin
+3,1641,55.0,0,21,Elliot Embleton
+3,1915,55.0,0,21,Isaac Lihadji
+3,479,90.0,0,21,Jack Clarke
+3,2687,45.0,0,21,Jay Matete
+2,3827,50.0,0,21,Jenson Seelt
+3,2812,60.0,0,21,Jewison Bennette
+3,2418,60.0,0,21,Jobe Bellingham
+4,3829,60.0,0,21,Luis Semedo
+3,2684,50.0,0,21,Luke O'Nien
+3,2682,55.0,0,21,Lynden Gooch
+1,3898,50.0,0,21,Nathan Bishop
+2,3828,50.0,0,21,Nectarios Triantis
+2,2680,45.0,0,21,Niall Huggins
+3,668,80.0,0,21,Patrick Roberts
+3,3546,50.0,0,21,Pierre Ekwah
+4,2692,85.0,0,21,Ross Stewart
+2,2681,55.0,0,21,Trai Hume
+1,606,45.0,0,22,Andy Fisher
+2,798,50.0,0,22,Benjamin Cabango
+2,789,40.0,0,22,Brandon Cooper
+3,2578,45.0,0,22,Cameron Congreve
+1,3892,45.0,0,22,Carl Rushworth
+2,3900,50.0,0,22,Harrison Ashby
+2,2693,50.0,0,22,Harry Darling
+3,289,65.0,0,22,Jamie Paterson
+3,799,50.0,0,22,Jay Fulton
+4,1128,75.0,0,22,Jerry Yates
+3,784,50.0,0,22,Joe Allen
+4,1664,100.0,0,22,Joel Piroe
+3,368,60.0,0,22,Josh Ginnelly
+2,3853,50.0,0,22,Josh Key
+2,796,45.0,0,22,Kyle Naughton
+4,809,60.0,0,22,Liam Cullen
+3,291,50.0,0,22,Liam Walsh
+3,800,55.0,0,22,Matt Grimes
+4,3890,60.0,0,22,Mykola Kukharevych
+2,670,50.0,0,22,Nathan Wood-Gordon
+2,2536,45.0,0,22,Nathanael Ogbeta
+3,1345,60.0,0,22,Oliver Cooper
+3,2333,60.0,0,22,Olivier Ntcham
+1,787,45.0,0,22,Steven Benda
+3,1295,55.0,0,23,Ayotomiwa Dele-Bashiru
+1,614,50.0,0,23,Ben Hamer
+1,980,55.0,0,23,Daniel Bachmann
+3,2701,55.0,0,23,Edo Kayembe
+2,1258,55.0,0,23,Francisco Sierralta
+3,3896,70.0,0,23,Giorgi Chakvetadze
+3,2700,70.0,0,23,Imrân Louza
+3,3455,60.0,0,23,Ismael Kenneth Jordan Kone
+3,386,50.0,0,23,Jake Livermore
+2,1053,60.0,0,23,Jamal Lewis
+2,2818,50.0,0,23,James Morris
+2,1203,55.0,0,23,Jeremy Ngakia
+3,1004,80.0,0,23,Ken Sema
+1,2695,50.0,0,23,Maduka Okoye
+3,3535,65.0,0,23,Matheus Martins
+2,2786,50.0,0,23,Matthew Pollock
+4,3830,80.0,0,23,Rhys Healey
+2,3587,50.0,0,23,Ryan Andrews
+2,3553,60.0,0,23,Ryan Porteous
+3,2815,65.0,0,23,Samuel Kalu
+3,764,70.0,0,23,Thomas Ince
+4,3537,55.0,0,23,Tobi Ademeyo
+4,2722,75.0,0,23,Vakoun Bayo
+2,3556,60.0,0,23,Wesley Hoedt
+3,2760,65.0,0,23,Yaser Asprilla
+3,725,55.0,0,24,Adam Reach
+3,848,60.0,0,24,Alex Mowatt
+1,1665,60.0,0,24,Alex Palmer
+4,2795,80.0,0,24,Brandon Thomas-Asante
+2,1511,50.0,0,24,Caleb Taylor
+2,424,55.0,0,24,Cedric Kipre
+2,382,65.0,0,24,Conor Townsend
+2,379,60.0,0,24,Darnell Furlong
+4,1421,85.0,0,24,Daryl Dike
+1,1509,50.0,0,24,David Button
+2,2813,60.0,0,24,Erik Pieters
+3,393,70.0,0,24,Grady Diangana
+3,323,60.0,0,24,Jayson Molumby
+3,321,100.0,0,24,Jed Wallace
+3,3073,80.0,0,24,Jeremy Leonel Sarmiento Morante
+3,143,100.0,0,24,John Swift
+4,1479,80.0,0,24,Josh Maja
+1,3560,55.0,0,24,Joshua Griffiths
+2,381,55.0,0,24,Kyle Bartley
+3,387,65.0,0,24,Matt Phillips
+3,991,55.0,0,24,Nathaniel Chalobah
+3,1516,60.0,0,24,Okay Yokuşlu
+2,403,55.0,0,24,Oluwasemilogo Adesewo Ibidapo Ajayi
+3,1514,55.0,0,24,Taylor Gardner-Hickman

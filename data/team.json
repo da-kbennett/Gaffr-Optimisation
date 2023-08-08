@@ -1,0 +1,182 @@
+{
+    "picks": [
+        {
+            "element": 3847,
+            "player_name": "Conor Hazard",
+            "position": 1,
+            "selling_price": 40,
+            "multiplier": 1,
+            "purchase_price": 40,
+            "is_captain": false,
+            "is_vice_captain": false
+        },
+        {
+            "element": 3552,
+            "player_name": "Ki-Jana Hoever",
+            "position": 2,
+            "selling_price": 55,
+            "multiplier": 1,
+            "purchase_price": 55,
+            "is_captain": false,
+            "is_vice_captain": false
+        },
+        {
+            "element": 2679,
+            "player_name": "Dennis Cirkin",
+            "position": 3,
+            "selling_price": 55,
+            "multiplier": 1,
+            "purchase_price": 55,
+            "is_captain": false,
+            "is_vice_captain": false
+        },
+        {
+            "element": 698,
+            "player_name": "Ryan Manning",
+            "position": 4,
+            "selling_price": 70,
+            "multiplier": 1,
+            "purchase_price": 70,
+            "is_captain": false,
+            "is_vice_captain": false
+        },
+        {
+            "element": 668,
+            "player_name": "Patrick Roberts",
+            "position": 5,
+            "selling_price": 80,
+            "multiplier": 1,
+            "purchase_price": 80,
+            "is_captain": false,
+            "is_vice_captain": false
+        },
+        {
+            "element": 3667,
+            "player_name": "James Michael Edward Ward-Prowse",
+            "position": 6,
+            "selling_price": 110,
+            "multiplier": 1,
+            "purchase_price": 110,
+            "is_captain": false,
+            "is_vice_captain": false
+        },
+        {
+            "element": 2700,
+            "player_name": "Imran Louza",
+            "position": 7,
+            "selling_price": 70,
+            "multiplier": 1,
+            "purchase_price": 70,
+            "is_captain": false,
+            "is_vice_captain": false
+        },
+        {
+            "element": 2658,
+            "player_name": "Zian Flemming",
+            "position": 8,
+            "selling_price": 90,
+            "multiplier": 1,
+            "purchase_price": 90,
+            "is_captain": false,
+            "is_vice_captain": false
+        },
+        {
+            "element": 772,
+            "player_name": "Tyrese Campbell",
+            "position": 9,
+            "selling_price": 70,
+            "multiplier": 1,
+            "purchase_price": 70,
+            "is_captain": false,
+            "is_vice_captain": true
+        },
+        {
+            "element": 852,
+            "player_name": "Conor Chaplin",
+            "position": 10,
+            "selling_price": 65,
+            "multiplier": 1,
+            "purchase_price": 65,
+            "is_captain": false,
+            "is_vice_captain": false
+        },
+        {
+            "element": 3829,
+            "player_name": "Luis Semedo",
+            "position": 11,
+            "selling_price": 60,
+            "multiplier": 2,
+            "purchase_price": 60,
+            "is_captain": true,
+            "is_vice_captain": false
+        },
+        {
+            "element": 1296,
+            "player_name": "Seny Dieng",
+            "position": 12,
+            "selling_price": 45,
+            "multiplier": 0,
+            "purchase_price": 45,
+            "is_captain": false,
+            "is_vice_captain": false
+        },
+        {
+            "element": 382,
+            "player_name": "Conor Townsend",
+            "position": 13,
+            "selling_price": 65,
+            "multiplier": 0,
+            "purchase_price": 65,
+            "is_captain": false,
+            "is_vice_captain": false
+        },
+        {
+            "element": 1310,
+            "player_name": "Riley McGree",
+            "position": 14,
+            "selling_price": 70,
+            "multiplier": 0,
+            "purchase_price": 70,
+            "is_captain": false,
+            "is_vice_captain": false
+        },
+        {
+            "element": 596,
+            "player_name": "Joe Rankin-Costello",
+            "position": 15,
+            "selling_price": 55,
+            "multiplier": 0,
+            "purchase_price": 55,
+            "is_captain": false,
+            "is_vice_captain": false
+        }
+    ],
+    "chips": [
+        {
+            "status_for_entry": "available",
+            "played_by_entry": [],
+            "name": "bboost",
+            "number": 1,
+            "start_event": 1,
+            "stop_event": 46,
+            "chip_type": "team"
+        },
+        {
+            "status_for_entry": "available",
+            "played_by_entry": [],
+            "name": "3xc",
+            "number": 1,
+            "start_event": 1,
+            "stop_event": 46,
+            "chip_type": "team"
+        }
+    ],
+    "transfers": {
+        "cost": 4,
+        "status": "unlimited",
+        "limit": null,
+        "made": 0,
+        "bank": 0,
+        "value": 1000
+    }
+}
