@@ -257,6 +257,7 @@ def solve_multi_period_fpl(data, options):
     squad = model.add_variables(players, all_gw, name='squad', vartype=so.binary)
     squad_fh = model.add_variables(players, gameweeks, name='squad_fh', vartype=so.binary)
     lineup = model.add_variables(players, gameweeks, name='lineup', vartype=so.binary)
+    defenders = model.add_variables(players, gameweeks, name='defenders', vartype=so.binary)
     captain = model.add_variables(players, gameweeks, name='captain', vartype=so.binary)
     vicecap = model.add_variables(players, gameweeks, name='vicecap', vartype=so.binary)
     emergencycap = model.add_variables(players, gameweeks, name='emergencycap', vartype=so.binary)
@@ -277,6 +278,7 @@ def solve_multi_period_fpl(data, options):
     use_wc = model.add_variables(gameweeks, name='use_wc', vartype=so.binary)
     use_bb = model.add_variables(gameweeks, name='use_bb', vartype=so.binary)
     use_fh = model.add_variables(gameweeks, name='use_fh', vartype=so.binary)
+    use_ptb = model.add_variables(gameweeks, name='use_ptb', vartype=so.binary)
 
     # Dictionaries
     lineup_type_count = {(t,w): so.expr_sum(lineup[p,w] for p in players if merged_data.loc[p, 'element_type'] == t) for t in element_types for w in gameweeks}
@@ -357,12 +359,16 @@ def solve_multi_period_fpl(data, options):
     if options.get('use_bb', None) is not None:
         model.add_constraint(use_bb[options['use_bb']] == 1, name='force_bb')
         chip_limits['bb'] = 1
+    if options.get('use_ptb', None) is not None:
+        model.add_constraint(use_ptb[options['use_ptb']] == 1, name='force_ptb')
+        chip_limits['ptb'] = 1
     if options.get('use_fh', None) is not None:
         model.add_constraint(use_fh[options['use_fh']] == 1, name='force_fh')
         chip_limits['fh'] = 1
     
     model.add_constraint(so.expr_sum(use_wc[w] for w in gameweeks) <= chip_limits.get('wc', 0), name='use_wc_limit')
     model.add_constraint(so.expr_sum(use_bb[w] for w in gameweeks) <= chip_limits.get('bb', 0), name='use_bb_limit')
+    model.add_constraint(so.expr_sum(use_ptb[w] for w in gameweeks) <= chip_limits.get('ptb', 0), name='use_ptb_limit')
     model.add_constraint(so.expr_sum(use_fh[w] for w in gameweeks) <= chip_limits.get('fh', 0), name='use_fh_limit')
     model.add_constraints((squad_fh[p,w] <= use_fh[w] for p in players for w in gameweeks), name='fh_squad_logic')
 
@@ -375,6 +381,9 @@ def solve_multi_period_fpl(data, options):
     if len(allowed_chip_gws.get('bb', [])) > 0:
         gws_banned = [w for w in gameweeks if w not in allowed_chip_gws['bb']]
         model.add_constraints((use_bb[w] == 0 for w in gws_banned), name='banned_bb_gws')
+    if len(allowed_chip_gws.get('ptb', [])) > 0:
+        gws_banned = [w for w in gameweeks if w not in allowed_chip_gws['ptb']]
+        model.add_constraints((use_ptb[w] == 0 for w in gws_banned), name='banned_ptb_gws')
 
     ## Multiple-sell fix
     model.add_constraints((transfer_out_first[p,w] + transfer_out_regular[p,w] <= 1 for p in price_modified_players for w in gameweeks), name='multi_sell_1')
@@ -488,7 +497,7 @@ def solve_multi_period_fpl(data, options):
             model.add_constraint(free_transfers[gw] == 2, name=f'have_2ft_{gw}')
 
     # Objectives
-    gw_xp = {w: so.expr_sum(points_player_week[p,w] * (lineup[p,w] + captain[p,w] + 0.5*vicecap[p,w] + 0.1*emergencycap[p,w] + so.expr_sum(bench_weights[o] * bench[p,w,o] for o in order)) for p in players) for w in gameweeks}
+    gw_xp = {w: so.expr_sum(points_player_week[p,w] * (lineup[p,w] + so.expr_sum(bench_weights[o] * bench[p,w,o] for o in order)) for p in players) for w in gameweeks}
     gw_total = {w: gw_xp[w] - 4 * penalized_transfers[w] + ft_value * free_transfers[w] + itb_value * in_the_bank[w] for w in gameweeks}
     if objective == 'regular':
         total_xp = so.expr_sum(gw_total[w] for w in gameweeks)
@@ -614,6 +623,7 @@ def solve_multi_period_fpl(data, options):
             for p in players:
                 if squad[p,w].get_value() + squad_fh[p,w].get_value() + transfer_out[p,w].get_value() > 0.5:
                     lp = merged_data.loc[p]
+                    is_defender = 1 if lp['element_type'] == 2 else 0
                     is_captain = 1 if captain[p,w].get_value() > 0.5 else 0
                     is_vicecap = 1 if vicecap[p,w].get_value() > 0.5 else 0
                     is_squad = 1 if (use_fh[w].get_value() < 0.5 and squad[p,w].get_value() > 0.5) or (use_fh[w].get_value() > 0.5 and squad_fh[p,w].get_value() > 0.5) else 0
@@ -628,7 +638,10 @@ def solve_multi_period_fpl(data, options):
                     position = type_data.loc[lp['element_type'], 'singular_name_short']
                     player_buy_price = 0 if not is_transfer_in else buy_price[p]
                     player_sell_price = 0 if not is_transfer_out else (sell_price[p] if p in price_modified_players and transfer_out_first[p,w].get_value() > 0.5 else buy_price[p])
-                    multiplier = 1*(is_lineup==1) + 1*(is_captain==1 and is_vicecap==0) + 0.5*(is_vicecap==1 and is_captain==0)
+                    if use_ptb[w].get_value() > 0.5:
+                        multiplier = 1*(is_lineup==1)                         
+                    else: 
+                        multiplier = 1*(is_lineup==1)
 
                     xp_cont = points_player_week[p,w] * multiplier
 
@@ -639,6 +652,8 @@ def solve_multi_period_fpl(data, options):
                         chip_text = 'FH'
                     elif use_bb[w].get_value() > 0.5:
                         chip_text = 'BB'
+                    elif use_ptb[w].get_value() > 0.5:
+                        chip_text = 'PTB'
                     # elif use_tc
                     else:
                         chip_text = ''
@@ -648,7 +663,10 @@ def solve_multi_period_fpl(data, options):
                     ])
 
         picks_df = pd.DataFrame(picks, columns=['id', 'week', 'name', 'pos', 'type', 'team', 'buy_price', 'sell_price', 'xP', 'xMin', 'squad', 'lineup', 'bench', 'captain', 'vicecap', 'emergencycaptain', 'transfer_in', 'transfer_out', 'multiplier', 'xp_cont', 'chip']).sort_values(by=['week', 'lineup', 'type', 'xP'], ascending=[True, False, True, True])
-        total_xp = so.expr_sum((lineup[p,w] + captain[p,w] + vicecap[p,w]) * points_player_week[p,w] for p in players for w in gameweeks).get_value()
+        if use_ptb[w].get_value() > 0.5:
+            total_xp = so.expr_sum((lineup[p,w]) * points_player_week[p,w] for p in players for w in gameweeks).get_value()
+        else:
+            total_xp = so.expr_sum((lineup[p,w]) * points_player_week[p,w] for p in players for w in gameweeks).get_value()
 
         picks_df.sort_values(by=['week', 'squad', 'lineup', 'bench', 'type'], ascending=[True, False, False, True, True], inplace=True)
 
@@ -658,7 +676,7 @@ def solve_multi_period_fpl(data, options):
         cumulative_xpts = 0
         for w in gameweeks:
             summary_of_actions += f"** GW {w}:\n"
-            chip_decision = ("WC" if use_wc[w].get_value() > 0.5 else "") + ("FH" if use_fh[w].get_value() > 0.5 else "") + ("BB" if use_bb[w].get_value() > 0.5 else "")
+            chip_decision = ("WC" if use_wc[w].get_value() > 0.5 else "") + ("FH" if use_fh[w].get_value() > 0.5 else "") + ("BB" if use_bb[w].get_value() > 0.5 else "") + ("PTB" if use_ptb[w].get_value() > 0.5 else "")
             if chip_decision != "":
                 summary_of_actions += "CHIP " + chip_decision + "\n"
             summary_of_actions += f"ITB={in_the_bank[w].get_value()}, FT={free_transfers[w].get_value()}, PT={penalized_transfers[w].get_value()}, NT={number_of_transfers[w].get_value()}\n"
@@ -682,7 +700,7 @@ def solve_multi_period_fpl(data, options):
             summary_of_actions += "---\nLineup: \n"
 
             def get_display(row):
-                return f"{row['name']} ({row['xP']}{', C' if row['captain'] == 1 else ''}{', V' if row['vicecap'] == 1 else ''}{', E' if row['emergencycaptain'] == 1 else ''})"
+                return f"{row['name']} ({row['xP']}{', C' if row['captain'] == 1 and use_ptb[w].get_value() != 1 else ''}{', V' if row['vicecap'] == 1 and use_ptb[w].get_value() != 1 else ''}{', E' if row['emergencycaptain'] == 1 and use_ptb[w].get_value() != 1 else ''})"
 
             for type in [1,2,3,4]:
                 type_players = lineup_players[lineup_players['type'] == type]
@@ -729,6 +747,8 @@ def solve_multi_period_fpl(data, options):
                     + so.expr_sum(use_wc[w] for w in gameweeks if use_wc[w].get_value() < 0.5) \
                     + so.expr_sum(1-use_bb[w] for w in gameweeks if use_bb[w].get_value() > 0.5) \
                     + so.expr_sum(use_bb[w] for w in gameweeks if use_bb[w].get_value() < 0.5) \
+                    + so.expr_sum(1-use_ptb[w] for w in gameweeks if use_ptb[w].get_value() > 0.5) \
+                    + so.expr_sum(use_ptb[w] for w in gameweeks if use_ptb[w].get_value() < 0.5) \
                     + so.expr_sum(1-use_fh[w] for w in gameweeks if use_fh[w].get_value() > 0.5) \
                     + so.expr_sum(use_fh[w] for w in gameweeks if use_fh[w].get_value() < 0.5)
         elif iteration_criteria == 'target_gws_transfer_in':

@@ -78,6 +78,8 @@ def read_sensitivity(options=None):
         squad_and_lineup['percentage'] = (squad_and_lineup['starts_count'] / squad_and_lineup['squad_count']) * 100
         squad_and_lineup = squad_and_lineup.sort_values(by='percentage', ascending=False)
         squad_and_lineup['percentage'] = squad_and_lineup['percentage'].astype(int).astype(str) + '%'
+
+        squad_and_lineup_avxp = squad_and_lineup.sort_values(by='average_xP', ascending=False)
         
         buy_sum['PSB'] = ["{:.0%}".format(buy_sum['PSB'][x]/no_plans) for x in range(buy_sum.shape[0])]
         sell_sum['PSB'] = ["{:.0%}".format(sell_sum['PSB'][x]/no_plans) for x in range(sell_sum.shape[0])]
@@ -95,17 +97,11 @@ def read_sensitivity(options=None):
         print('Sell:')
         print('\n'.join(sell_sum.to_string(index = False).split('\n')[1:]))
         print()
-        print('Captains:')
-        print('\n'.join(caps.to_string(index = False).split('\n')[1:]))
-        print()
-        print('Vice Captains:')
-        print('\n'.join(vices.to_string(index = False).split('\n')[1:]))
-        print()
-        print('Emergency Captains:')
-        print('\n'.join(emergencies.to_string(index = False).split('\n')[1:]))
+        print('Who to stick the armband on:')
+        print('\n'.join(squad_and_lineup_avxp[['player', 'average_xP']].to_string(index=False, float_format="%.2f").split('\n')[1:]))
         print()
         print('Makes the starting lineup:')
-        print('\n'.join(squad_and_lineup[['player', 'percentage', 'average_xP']].to_string(index=False, float_format="%.2f").split('\n')[1:]))
+        print('\n'.join(squad_and_lineup[['player', 'percentage']].to_string(index=False, float_format="%.2f").split('\n')[1:]))
     
     elif situation == "Y" or situation == "y":
 
